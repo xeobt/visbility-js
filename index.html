@@ -7,37 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table>
-  <tr>
-    <th>CSS</th>
-    <th>JS</th>
-  </tr>
-  <tr><td>background-color</td><td>backgroundColor</td></tr>
-  <tr><td>font-size</td><td>fontSize</td></tr>
-  <tr><td>text-align</td><td>textAlign</td></tr>
-  <tr><td>margin-top</td><td>marginTop</td></tr>
-  <tr><td>margin-left</td><td>marginLeft</td></tr>
-  <tr><td>padding-right</td><td>paddingRight</td></tr>
-  <tr><td>border-radius</td><td>borderRadius</td></tr>
-  <tr><td>box-shadow</td><td>boxShadow</td></tr>
-  <tr><td>line-height</td><td>lineHeight</td></tr>
-  <tr><td>z-index</td><td>zIndex</td></tr>
-  <tr><td>max-width</td><td>maxWidth</td></tr>
-  <tr><td>min-height</td><td>minHeight</td></tr>
-  <tr><td>overflow-x</td><td>overflowX</td></tr>
-  <tr><td>overflow-y</td><td>overflowY</td></tr>
-  <tr><td>word-spacing</td><td>wordSpacing</td></tr>
-  <tr><td>letter-spacing</td><td>letterSpacing</td></tr>
-  <tr><td>text-transform</td><td>textTransform</td></tr>
-  <tr><td>justify-content</td><td>justifyContent</td></tr>
-  <tr><td>align-items</td><td>alignItems</td></tr>
-  <tr><td>flex-direction</td><td>flexDirection</td></tr>
-  <tr><td>grid-template-columns</td><td>gridTemplateColumns</td></tr>
-  <tr><td>grid-template-rows</td><td>gridTemplateRows</td></tr>
-  <tr><td>animation-duration</td><td>animationDuration</td></tr>
-  <tr><td>animation-timing-function</td><td>animationTimingFunction</td></tr>
-  <tr><td>transition-property</td><td>transitionProperty</td></tr>
-  <tr><td>border-top-color</td><td>borderTopColor</td></tr>
-</table>
+  <main>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+  </main>
+  <aside>
+    <button type="submit" onclick="div1()">Pokaz div1</button>
+    <button type="submit" onclick="div2()">Pokaz div2</button>
+    <button type="submit" onclick="div3()">Pokaz div3</button>
+  </aside>
+
+
+  <script>
+    const d1 = document.getElementById("div1");
+    d1.style.visibility = "hidden";
+    const d2 = document.getElementById("div2");
+    d2.style.visibility = "hidden";
+    const d3 = document.getElementById("div3");
+    d3.style.visibility = "hidden";
+
+    function div1(){
+      const d1 = document.getElementById("div1");
+    d1.style.visibility = "visible";
+    }
+
+    function div2(){
+      const d2 = document.getElementById("div2");
+    d2.style.visibility = "visible";
+    }
+
+    function div3(){
+      const d3 = document.getElementById("div3");
+    d3.style.visibility = "visible";
+    }
+  </script>
 </body>
 </html>
