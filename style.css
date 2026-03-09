@@ -1,0 +1,25 @@
+table{
+    border-collapse: collapse;
+    box-shadow: 10px 10px 10px;
+}
+th, tr, td{
+    border: 3px solid black;
+    border-collapse: collapse;
+    transition: 1s;
+}
+td{
+    border-radius: 100px;
+}
+td:hover{
+    transform: scale(1.1);
+    background-color: gray;
+    transition: 0.5s;
+}
+tr:hover{
+    border: 1px solid black;
+}
+body{
+    text-align: center;
+    font-size: 150%;
+    font-family: arial;
+}
